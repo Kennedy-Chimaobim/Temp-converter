@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grp-6-standalone project</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="https://cdn.jsdelivr.net/npm/@phosphor-
+icons/web@2.1.1/src/fill/style.css" 
+  /> 
+
+    <link rel="stylesheet" href="temperature.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="nav">
+          <div class="nav__header--icon">
+            <i class="ph ph-thermometer-simple"></i>
+          </div>
+          <div class="nav__header--text">
+            <h1 class="navTitle">G6-Temp</h1>
+            <h2 class="navTitle">Converter</h2>
+          </div>
+        </header>
+    
+        <section class="main">
+          <input type="number" id="mainTempInput" placeholder="Enter temperature value">
+          <div class="Select__container">
+            <select id="temp1" class="temp1">
+              <option value="">from</option>
+              <option value="Celsius">Celsius</option>
+              <option value="Fahrenheit">Fahrenheit</option>
+              <option value="Kelvin">Kelvin</option>
+            </select>
+              <span id="convert-icon"><i class="ph-fill ph-arrows-clockwise"></i></span> 
+
+            <select id="temp2" class="temp2">
+              <option value="">to</option>
+              <option value="Celsius">Celsius</option>
+              <option value="Fahrenheit">Fahrenheit</option>
+              <option value="Kelvin">Kelvin</option>
+            </select>
+          </div>
+          <button onclick="convertTemp()" class="convert__Btn">Convert</button>
+        </section>
+    
+        <div class="results" id="results">
+          <div class="main-result" id="mainResult"></div>
+          <div class="secondary" id="allResults"></div>
+        </div>
+      </div>
+    <script src="temperature.js"></script>
+
+</body>
+
+
+</html>
